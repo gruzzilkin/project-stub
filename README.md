@@ -18,9 +18,12 @@ So, how easy is it to get started with BEM?  *Super easy*.
 
     It's as easy as...
     
-    1 › git clone git://github.com/bem/project-stub.git
+    1 › git clone git://github.com/mdevils/project-stub.git
     2 › cd project-stub
-    3 › make
+    3 › npm install
+    4 › git submodule init
+    5 › git submodule update
+    6 › make
 
     (hint: execute the above commands in your terminal)
 

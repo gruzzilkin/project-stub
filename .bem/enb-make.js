@@ -15,7 +15,7 @@ module.exports = function(config) {
             new (require('enb/techs/css-ie7'))(),
             new (require('enb/techs/css-ie8'))(),
             new (require('enb/techs/css-ie9'))(),
-            new (require('enb/techs/bemhtml'))(),
+            new (require('enb-bemhtml/techs/bemhtml'))(),
             new (require('enb/techs/html-from-bemjson'))()
         ]);
         nodeConfig.addTargets([
@@ -55,7 +55,6 @@ function getLevels(config) {
     return [
         'bem-bl/blocks-common',
         'bem-bl/blocks-desktop',
-        'bemhtml/common.blocks',
         'common.blocks',
         'desktop.blocks'
     ].map(function(level) {

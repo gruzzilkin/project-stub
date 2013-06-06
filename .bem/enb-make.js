@@ -55,6 +55,7 @@ function getLevels(config) {
     return [
         'bem-bl/blocks-common',
         'bem-bl/blocks-desktop',
+        'bemhtml/common.blocks',
         'common.blocks',
         'desktop.blocks'
     ].map(function(level) {

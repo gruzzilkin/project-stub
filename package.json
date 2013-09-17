@@ -1,7 +1,7 @@
 {
   "author": "",
   "name": "enb-project-stub",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/mdevils/project-stub.git"
@@ -10,7 +10,8 @@
     "node": "0.6 | 0.7 | 0.8 | 0.9"
   },
   "dependencies": {
-    "enb" : ">=0.7.4"
+    "enb" : ">=0.8.35",
+    "bh" : ">=0.1.19"
   },
   "devDependencies": {},
   "private": true

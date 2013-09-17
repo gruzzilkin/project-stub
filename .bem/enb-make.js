@@ -8,9 +8,8 @@ module.exports = function(config) {
             new (require('enb/techs/levels'))({ levels: getLevels(config) }),
             new (require('enb/techs/deps-old'))(),
             new (require('enb/techs/files'))(),
-            new (require('./techs/html'))(),
-//            new (require('enb/techs/bemhtml'))(),
-//            new (require('enb/techs/html-from-bemjson'))(),
+            new (require('bh/techs/bh-server'))(),
+            new (require('enb/techs/html-from-bemjson'))(),
             new (require('enb/techs/js'))(),
             new (require('enb/techs/css'))(),
             new (require('enb/techs/css-ie'))(),
@@ -54,7 +53,6 @@ module.exports = function(config) {
 
 function getLevels(config) {
     return [
-//        'bemhtml/common.blocks',
         'bem-bl/blocks-common',
         'bem-bl/blocks-desktop',
         'bh/desktop.blocks',

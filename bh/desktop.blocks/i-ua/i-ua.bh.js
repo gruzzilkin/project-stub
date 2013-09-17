@@ -1,9 +1,9 @@
 module.exports = function(bh) {
 
-    bh.match('i-ua', function(ctx) {
+    bh.match('i-ua', function(ctx, json) {
         return {
-            tag: 'script',
             bem: false,
+            tag: 'script',
             content: [
                 ';(function(d,e,c,r){',
                     'e=d.documentElement;',
@@ -14,7 +14,7 @@ module.exports = function(bh) {
                     'e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")',
                 '})(document);'
             ].join('')
-        };
+        }
     });
 
 };

@@ -1,6 +1,6 @@
 module.exports = function(bh) {
 
-    bh.match('i-jquery__core', function(ctx) {
+    bh.match('i-jquery__core', function(ctx, json) {
         return {
             block: 'b-page',
             elem: 'js',
